@@ -36,15 +36,12 @@ public class Statistics {
         median = (testScores[middle] + testScores[middle - 1]) / 2;
 
         // test order
-        for (int score: testScores){
-            System.out.print(score + " ");
-        }
-
-        // Display
-        System.out.println(average);
-        System.out.println(highScore);
-        System.out.println(lowScore);
-
-
+//        for (int score: testScores){
+//            System.out.print(score + " ");
+//
+        System.out.printf("Average = %d%n", average);
+        System.out.printf("Highscore = %d%n", highScore);
+        System.out.printf("Lowscore = %d%n", lowScore);
+        System.out.printf("Median([%d,%d]) = %d", testScores[middle - 1], testScores[middle], median);
     }
 }
